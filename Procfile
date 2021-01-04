@@ -1,1 +1,1 @@
-web: npm start
+web: cd crud_front && npm start
