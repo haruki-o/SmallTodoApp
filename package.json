@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "this is test.",
   "main": "index.js",
+  "engines": {
+    "node": "12.16.2",
+    "npm": "5.7.1"
+  },
   "directories": {
     "lib": "lib",
     "test": "test"
