@@ -1,1 +1,1 @@
-web: exec /usr/bin/env PORT=3004 sh -c 'cd crud_front && npm install && npm start'
+web: exec /usr/bin/env PORT=3000 sh -c 'cd crud_front && npm install && npm start'
