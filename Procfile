@@ -1,1 +1,1 @@
-web: cd crud_front && hs
+web: cd crud_front && cd build && hs
