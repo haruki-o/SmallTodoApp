@@ -1,1 +1,1 @@
-web: cd crud_front && cd build && hs
+web: cd crud_front && npm run build && cd build && hs
