@@ -1,1 +1,0 @@
-web: cd crud_front && npm install && npm start
