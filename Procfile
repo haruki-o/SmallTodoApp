@@ -1,1 +1,1 @@
-web: ls
+web: cd crud_front && ls
