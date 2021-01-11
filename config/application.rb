@@ -35,7 +35,7 @@ module Rpggame2
     config.api_only = true
     config.middleware.insert_before 0, Rack::Cors do
       allow do
-        origins "http://localhost:3004"
+        origins "http://localhost:3004",'https://afternoon-spire-41342.herokuapp.com/'
         resource '*',
         :headers => :any,
         :methods => [:get, :post, :patch, :delete, :options]

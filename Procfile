@@ -1,1 +1,1 @@
-web: cd crud_front && npm install && npm start
+web: rails s -p 3003

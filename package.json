@@ -19,7 +19,10 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cd crud_front && npm run install && npm run build && cd ..",
+    "deploy": "cp -a crud_front/build/. public/",
+    "heroku-postbuild": "npm run build && npm run deploy"
   },
   "author": "ogawa",
   "license": "ISC"

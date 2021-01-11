@@ -12,8 +12,8 @@ class MainContainer extends React.Component {
       text: []
     }
   }
-  componentDidMount(){ 
-    axios.get('/characters')
+  componentDidMount(){
+    axios.get(process.env.REACT_APP_SERVER_URL+'/characters')
     .then((response)=>{
       this.setState({
         text: response.data
@@ -26,7 +26,7 @@ class MainContainer extends React.Component {
     })
   }
   textSubmit=(textSubmit)=>{
-    axios.post('/characters',{name: textSubmit})
+    axios.post(process.env.REACT_APP_SERVER_URL+'/characters',{name: textSubmit})
     .then((res)=>{
       const addEndData = update(this.state.text,{$push:[res.data]});
       this.setState({text: addEndData});
@@ -37,7 +37,7 @@ class MainContainer extends React.Component {
     })
   }
   textChange = (id,textChange)=>{
-    axios.patch('/characters/' + id,{name: textChange})
+    axios.patch(process.env.REACT_APP_SERVER_URL+'/characters/' + id,{name: textChange})
     .then((res)=>{
       const insertFiguer = this.state.text.findIndex(x=>x.id===id)
       const insertEndData = update(this.state.text,{[insertFiguer]: {$set: res.data}});
@@ -48,7 +48,7 @@ class MainContainer extends React.Component {
     })
   }
   textDelete = (id)=>{
-    axios.delete('/characters/'+id)
+    axios.delete(process.env.REACT_APP_SERVER_URL+'/characters/'+id)
     .then((res)=>{
       const deleteFigure = this.state.text.findIndex(x=>x.id===id);
       const deleteEndData = update(this.state.text,{$splice: [[deleteFigure, 1]]});     
