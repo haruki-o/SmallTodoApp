@@ -21,7 +21,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "deploy": "cp -a crud_front/build/. public/",
-    "heroku-postbuild": "cd crud_front && npm run install && cd .. && npm run deploy"
+    "heroku-postbuild": "cd crud_front && npm run install && cd .. && echo a"
   },
   "author": "ogawa",
   "license": "ISC"
