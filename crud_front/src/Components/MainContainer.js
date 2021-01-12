@@ -69,3 +69,4 @@ class MainContainer extends React.Component {
 }
 
 export default MainContainer;
+//"build": "cd crud_front && npm run install && npm run build && cd ..",
