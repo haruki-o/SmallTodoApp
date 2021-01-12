@@ -71,3 +71,4 @@ class MainContainer extends React.Component {
 export default MainContainer;
 //"build": "cd crud_front && npm run install && npm run build && cd ..",
 //const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 3000; in start.js 44
+// development->production 2 in startjs
