@@ -72,3 +72,4 @@ export default MainContainer;
 //"build": "cd crud_front && npm run install && npm run build && cd ..",
 //const DEFAULT_PORT = parseInt(process.env.PORT, 10) || 3000; in start.js 44
 // development->production 2 in startjs
+//"heroku-postbuild": "cd crud_front && npm install && npm run build && cd .." in package.json rpggme2
