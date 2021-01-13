@@ -1,1 +1,2 @@
-web: cd crud_front && npm start && cd .. && rails s -p $PORT
+web: cd crud_front && npm start
+api: rails s -p $PORT
