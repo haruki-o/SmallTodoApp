@@ -20,8 +20,7 @@
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "deploy": "echo b && cp -a crud_front/build/. public/",
-    "heroku-postbuild": "cd crud_front && npm install && cd .."
+    "deploy": "echo b && cp -a crud_front/build/. public/"
   },
   "author": "ogawa",
   "license": "ISC"
