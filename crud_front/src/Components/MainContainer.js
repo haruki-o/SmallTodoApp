@@ -13,7 +13,7 @@ class MainContainer extends React.Component {
     }
   }
   componentDidMount(){
-    axios.get(process.env.REACT_APP_SERVER_URL+'/characters')
+    axios.get('https://apiapp-server.herokuapp.com/characters')
     .then((response)=>{
       this.setState({
         text: response.data
